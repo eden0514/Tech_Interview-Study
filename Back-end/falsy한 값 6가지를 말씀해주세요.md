@@ -13,4 +13,5 @@ falsy한 값이 아니면 truthy한 값으로 평가된다.
 5. NaN
   <br> Not a number(숫자가 아님을 의미)
 6. ''(빈문자열)
+
 !! 이 때 빈 객체와 빈 배열은 truty값임.
