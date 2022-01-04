@@ -33,7 +33,7 @@ someFunc((err,data)=>{
 })
 ```
 ### callback hell
-callback함수를 이용해서 비동기이지만 순서를 보장받을 수 있다는 장점이 있지만 callback 함수의 문제점으로 callback hell이라는 것이 있다. 이는 순차적으로 계속해서 콜백을 넣어 작성을 하는 경우,
+callback함수를 이용해서 비동기이지만 순서를 보장받을 수 있다는 장점이 있지만, callback 함수의 문제점으로 callback hell이라는 것이 있다. 이는 순차적으로 계속해서 콜백을 넣어 작성을 하는 경우,
 가독성 측면과 코드를 관리하기 상당히 어려워진다는 단점이 존재한다.
 ```js
 const print = () => {
