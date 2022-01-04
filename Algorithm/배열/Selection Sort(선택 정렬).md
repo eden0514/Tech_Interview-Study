@@ -9,4 +9,20 @@
 3. 맨 처음을 뺀 위치에서 나머지 리스트를 위와 같은 방법으로 교체한다.
 4. 리스트 끝까지 위 과정을 반복한다.
 
-### Javascript로 선
+### Javascript로 선택 정렬 작성
+```js
+function selectionSort (arr) {
+  for(let i = 0; i < arr.length; i++){
+    let minIdx = i;
+    for(let j = i +1 ; j < arr.length; j++){
+      if(arr[minIdx] > arr[j]){
+        minIdx = j;
+      }
+    }
+    if(minIdx !== i){
+      [arr[i],arr[minIdx]] = [arr[minIdx],arr[i]]
+    }
+  }
+  return arr;
+}
+```
